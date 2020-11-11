@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { theme } from './styles/theme'
+import { ThemeProvider } from 'styled-components'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import SeoulMain from './atomic/pages/SeoulMain';
+import Lectures from './atomic/pages/Lectures';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Switch>
+          <Route path="/" component={SeoulMain} exact={true} />
+          <Route path="/lectures" component={Lectures} exact={true} />
+        </Switch>
+      </Router>
+    </ThemeProvider>
   );
 }
 

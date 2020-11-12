@@ -1,5 +1,5 @@
 import React from "react"
-import DataBox from "../atom/DataBox"
+import DataBox from "../0_atom/DataBox"
 import { Text } from "@chakra-ui/core"
 import styled from "styled-components"
 

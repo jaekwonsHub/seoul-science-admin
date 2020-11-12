@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components"
-import DataBarOptionName from "../molecules/DataBarOptionName";
-import FLButtonGroup from "../molecules/FLButtonGroup";
+import DataBarOptionName from "../1_molecules/DataBarOptionName";
+import FLButtonGroup from "../1_molecules/FLButtonGroup";
 
 const Container = styled.div`
   padding: 10px 30px;  
@@ -16,7 +16,6 @@ const BottomButtonBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 30px;
 `
 
 const ClassList = () => {

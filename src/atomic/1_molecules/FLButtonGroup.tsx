@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const ButtonGroup = styled.div``
 
-const FBButtonGroup = () => {
+const FLButtonGroup = () => {
   return (
     <ButtonGroup>
       <Button backgroundColor="" margin="5px">처음</Button>
@@ -13,4 +13,4 @@ const FBButtonGroup = () => {
   )
 }
 
-export default FBButtonGroup
+export default FLButtonGroup

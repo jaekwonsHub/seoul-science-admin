@@ -1,5 +1,5 @@
 import React from "react"
-import DataText from "../atom/DataText"
+import DataText from "../0_atom/DataText"
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -10,7 +10,7 @@ const Container = styled.div`
   align-items:center;
 `
 
-const TotalGroup = () => {
+const TotalGroupTop = () => {
   return (
     <Container>
       <DataText>총인원 :</DataText>
@@ -22,4 +22,4 @@ const TotalGroup = () => {
   )
 }
 
-export default TotalGroup
+export default TotalGroupTop

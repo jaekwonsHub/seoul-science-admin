@@ -1,5 +1,5 @@
 import React from "react"
-import DataText from "../atom/DataText"
+import DataText from "../0_atom/DataText"
 import styled from "styled-components"
 
 const Container = styled.div`

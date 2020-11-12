@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
-import MainLogo from "../atom/MainLogo";
+import MainLogo from "../0_atom/MainLogo";
 import styled from "styled-components"
-import RootButtonGroup from "../molecules/RootButtonGroup";
-import SignOutButton from "../atom/SignOutButton";
+import RootButtonGroup from "../1_molecules/RootButtonGroup";
+import SignOutButton from "../0_atom/SignOutButton";
 
 
 const Container = styled.div`
@@ -21,21 +21,21 @@ const SubContainer = styled.div`
 `
 
 export interface ISeoulHeadProps {
-  fontSize?: number;
-  fontWeight?: number;
-  fontColor?: string;
-  onClick?: () => any;
 }
 
 
-const SeoulHead: FunctionComponent<ISeoulHeadProps> = ({ onClick }) => {
+const SeoulHead: FunctionComponent<ISeoulHeadProps> = ({ }) => {
   return (
     <Container>
       <SubContainer>
-        <MainLogo fontSize={30} fontWeight={800} >서울 시립 과학관</MainLogo>
-        <RootButtonGroup onClick={onClick} />
+        <MainLogo fontSize={30} fontWeight={800} />
+        <RootButtonGroup
+          RootButtonColor="#ffffff"
+          MenuColor="#1B365D"
+          MenuButtonColor="#1B365D"
+        />
       </SubContainer>
-      <SignOutButton />
+      <SignOutButton backgroundColor="" border="1px solid #999999" width="90px" height="40px" />
     </Container>
   )
 }

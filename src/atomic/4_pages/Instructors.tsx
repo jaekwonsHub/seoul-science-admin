@@ -1,10 +1,10 @@
 import React from "react"
-import SeoulHead from "../2_organisms/SeoulHead"
+import MainHead from "../2_organisms/MainHead"
 
 const Instructors = () => {
   return (
     <div>
-      <SeoulHead />
+      <MainHead />
       강사진
     </div>
   )

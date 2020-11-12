@@ -1,19 +1,18 @@
 import React from 'react';
-import { theme } from './styles/theme'
-import { ThemeProvider } from 'styled-components'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import Lectures from './atomic/4_pages/Lectures';
 import LecturesNew from './atomic/4_pages/LecturesNew';
 import InstructorsNew from './atomic/4_pages/InstructorsNew';
 import Instructors from './atomic/4_pages/Instructors';
 import DashBoard from './atomic/4_pages/DashBoard';
-import SeoulMainPage from './atomic/4_pages/SeoulMainPage';
+import SeoulMainPage from './atomic/4_pages/MainPage';
+import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Router>
+    <Router>
+      <ThemeProvider>
+        <CSSReset />
         <Switch>
           <Route path="/" component={SeoulMainPage} exact={true} />
           <Route path="/dashboard" component={DashBoard} exact={true} />
@@ -24,8 +23,8 @@ function App() {
           <Route path="/incstuctors/new" component={InstructorsNew} exact={true} />
           {/* <Route path="/incstuctors:id" component={Lectures} exact={true} />  */}
         </Switch>
-      </Router>
-    </ThemeProvider>
+      </ThemeProvider>
+    </Router>
   );
 }
 

@@ -1,14 +1,14 @@
 import React from "react"
 import StandardPageTemplate from "../3_templates/StandardPageTemplate"
 
-import MainBody from "../2_organisms/MainBody"
-import SeoulHead from "../2_organisms/SeoulHead"
+import HomeBody from "../2_organisms/HomeBody"
+import MainHead from "../2_organisms/MainHead"
 
 const SeoulMainPage = () => {
   return (
     <StandardPageTemplate
-      PageHead={<SeoulHead />}
-      PageBody={<MainBody />}>
+      PageHead={<MainHead />}
+      PageBody={<HomeBody />}>
     </StandardPageTemplate>
   )
 }

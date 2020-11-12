@@ -1,13 +1,12 @@
 import React from "react";
 import StandardPageTemplate from "../3_templates/StandardPageTemplate";
-
-import SeoulHead from "../2_organisms/SeoulHead";
+import MainHead from "../2_organisms/MainHead";
 import DashBody from "../2_organisms/DashBody";
 
 
 const DashBoard = () => {
   return <StandardPageTemplate
-    PageHead={<SeoulHead />}
+    PageHead={<MainHead />}
     PageBody={<DashBody />}
   />
 }

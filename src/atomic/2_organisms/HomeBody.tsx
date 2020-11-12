@@ -1,6 +1,6 @@
 import React from "react"
 
-const MainBody = () => {
+const HomeBody = () => {
   return (
     <div>
       Page body
@@ -8,4 +8,4 @@ const MainBody = () => {
   )
 }
 
-export default MainBody
+export default HomeBody

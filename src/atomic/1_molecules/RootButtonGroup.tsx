@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react';
+import styled from "styled-components"
 import {
   Button, Menu,
   MenuButton,
   MenuList,
   MenuItem,
+  Box,
 } from "@chakra-ui/core"
 import { Link } from 'react-router-dom';
-
-import styled from "styled-components"
 
 const Container = styled.div`
   display: flex;
@@ -15,13 +15,11 @@ const Container = styled.div`
   justify-content: center;
   margin: 0px 5px;
 `
-
 export interface IRootButtonGroupProps {
   RootButtonColor?: string;
   MenuColor?: string;
   MenuButtonColor?: string;
 }
-
 const RootButtonGroup: FunctionComponent<IRootButtonGroupProps> = ({
   RootButtonColor,
   MenuColor,
@@ -29,6 +27,7 @@ const RootButtonGroup: FunctionComponent<IRootButtonGroupProps> = ({
 }) => {
   return (
     <Container>
+      <Box width="3px" height="30px" backgroundColor="#ffffff" borderRadius="2px" marginLeft="10px" />
       <Menu autoSelect={false} >
         <MenuButton as={Button} backgroundColor="" color={RootButtonColor} fontSize="15px">
           <Link to="/dashboard">
@@ -36,9 +35,10 @@ const RootButtonGroup: FunctionComponent<IRootButtonGroupProps> = ({
           </Link>
         </MenuButton>
       </Menu>
+      <Box width="3px" height="15px" backgroundColor="#ffffff" borderRadius="2px" />
       <Menu autoSelect={false} >
         <MenuButton as={Button} backgroundColor="" color={RootButtonColor} fontSize="15px">
-          강좌
+          강의
         </MenuButton>
         <MenuList backgroundColor={MenuColor}>
           <MenuItem backgroundColor={MenuButtonColor} color="#ffffff" fontSize="15px">
@@ -53,6 +53,7 @@ const RootButtonGroup: FunctionComponent<IRootButtonGroupProps> = ({
           </MenuItem>
         </MenuList>
       </Menu>
+      <Box width="3px" height="15px" backgroundColor="#ffffff" borderRadius="2px" />
       <Menu autoSelect={false}>
         <MenuButton as={Button} backgroundColor="" color={RootButtonColor} fontSize="15px">
           강사
@@ -70,6 +71,7 @@ const RootButtonGroup: FunctionComponent<IRootButtonGroupProps> = ({
           </MenuItem>
         </MenuList>
       </Menu>
+      <Box width="3px" height="15px" backgroundColor="#ffffff" borderRadius="2px" />
     </Container>
   )
 }

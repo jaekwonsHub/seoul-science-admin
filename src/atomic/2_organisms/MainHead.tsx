@@ -1,9 +1,8 @@
 import React, { FunctionComponent } from "react";
-import MainLogo from "../0_atom/MainLogo";
 import styled from "styled-components"
+import MainLogo from "../0_atom/MainLogo";
 import RootButtonGroup from "../1_molecules/RootButtonGroup";
 import SignOutButton from "../0_atom/SignOutButton";
-
 
 const Container = styled.div`
   width: 100%;
@@ -15,16 +14,10 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 15px;
 `
-
 const SubContainer = styled.div`
   display: flex;
 `
-
-export interface ISeoulHeadProps {
-}
-
-
-const SeoulHead: FunctionComponent<ISeoulHeadProps> = ({ }) => {
+const MainHead: FunctionComponent = ({ }) => {
   return (
     <Container>
       <SubContainer>
@@ -35,9 +28,13 @@ const SeoulHead: FunctionComponent<ISeoulHeadProps> = ({ }) => {
           MenuButtonColor="#1B365D"
         />
       </SubContainer>
-      <SignOutButton backgroundColor="" border="1px solid #999999" width="90px" height="40px" />
+      <SignOutButton
+        backgroundColor=""
+        border="1px solid #ffffff"
+        width="90px"
+        height="40px" />
     </Container>
   )
 }
 
-export default SeoulHead
+export default MainHead

@@ -1,12 +1,16 @@
-import React from "react"
-import SeoulHead from "../2_organisms/SeoulHead"
+import React from "react";
+import StandardPageTemplate from "../3_templates/StandardPageTemplate";
+
+import MainHead from "../2_organisms/MainHead";
+import LecturesBody from "../2_organisms/LecturesBody"
 
 const Lectures = () => {
   return (
-    <div>
-      <SeoulHead />
-      강좌 페이지
-    </div>
+    <StandardPageTemplate
+      PageHead={<MainHead />}
+      PageBody={<LecturesBody />}
+    />
   )
 }
+
 export default Lectures

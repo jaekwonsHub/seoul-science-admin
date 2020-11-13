@@ -8,18 +8,19 @@ const Container = styled.div`
 `
 interface ILabelWithInputProps {
   labelText?: string;
-
+  InputPlaceHolder?: string;
 }
 
 const LabelWithInput: FunctionComponent<ILabelWithInputProps> = (
   {
-    labelText
+    labelText,
+    InputPlaceHolder
   }
 ) => {
   return (
     <Container>
       <Text fontSize="17px" fontWeight="700">{labelText}</Text>
-      <Input borderColor="#000000" marginTop="5px" />
+      <Input borderColor="#000000" marginTop="5px" placeholder={InputPlaceHolder} />
     </Container>
   )
 }

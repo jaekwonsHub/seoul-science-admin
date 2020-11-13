@@ -1,12 +1,17 @@
 import React from "react"
+import StandardPageTemplate from "../3_templates/StandardPageTemplate"
+
 import MainHead from "../2_organisms/MainHead"
+import InstructorsNewBody from "../2_organisms/InstructorsNewBody"
+
+
 
 const InstructorsNew = () => {
   return (
-    <div>
-      <MainHead />
-      강사진 새로 등록
-    </div>
+    <StandardPageTemplate
+      PageHead={<MainHead />}
+      PageBody={<InstructorsNewBody />}
+    />
   )
 }
 export default InstructorsNew

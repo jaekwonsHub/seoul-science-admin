@@ -1,6 +1,8 @@
 import React from "react";
 import { Text, Select, Input } from "@chakra-ui/core";
 import styled from "styled-components";
+import DashBoardDataName from "./DashBoardDataName";
+import FLButton from "./FLButton";
 
 
 const Container = styled.div`
@@ -13,7 +15,7 @@ const SearchBox = styled.div`
   display:flex;
 `
 const DatePickerContainer = styled.div`
-  width : 80%;
+  margin : 15px 0px;
   display:flex;
 `
 const DatePickerBox = styled.div`
@@ -46,16 +48,17 @@ const SearchData = () => {
       </SearchBox>
       <DatePickerContainer>
         <DatePickerBox>
-          <Text fontSize="15px" fontWeight="700">시작일</Text>
+          <Text fontSize="18px" fontWeight="700">시작일</Text>
         </DatePickerBox>
         <DatePickerBox>
-          <Text fontSize="15px" fontWeight="700">종료일</Text>
+          <Text fontSize="18px" fontWeight="700">종료일</Text>
         </DatePickerBox>
       </DatePickerContainer>
       <LectureListContainer>
         <LectureListHead>
-          dd
+          <DashBoardDataName />
         </LectureListHead>
+        <FLButton />
       </LectureListContainer>
     </Container >
   )

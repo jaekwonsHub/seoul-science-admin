@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   align-items:center;
   width: 80%;
-  height: 40px;
+  height: 30px;
   border: 1px solid #000000;
   border-radius : 3px;
   margin-top: 10px;
@@ -13,6 +13,7 @@ const Container = styled.div`
 const SubContainer = styled.div`
   width: 50%;
   padding-left: 20px;
+  font-size : 13px;
 `
 
 interface IListLabelProps {
